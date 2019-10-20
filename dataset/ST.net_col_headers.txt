@@ -1,0 +1,35 @@
+*test_id - Unique ID of the test.
+*test_date - Date and time of the test in Pacific time zone (GMT -8).
+*client_ip_id - A unique ID representing the client IP address. This ID is masked to protect client identity.
+*client_ip_address - Speedtest user's IP address. The last octet of the user's external IP address is masked for addresses that are not on your network. Full IP addresses are available for your customers.
+*download_kbps - The result of the download portion of the test, measured in kilobits per second.
+*upload_kbps - The result of the upload portion of the test, measured in kilobits per second.
+*latency - The result of the latency portion of the test, measured in milliseconds.
+*server_name - City where server tested is located.
+*server_country - Country where server tested is located.
+*server_country_code - Country code of country where server is tested.
+*server_latitude - Latitude of server tested.
+*server_longitude - Longitude of server tested.
+*server_sponsor_name - Name of the server tested.
+*user_agent - User agent or web browser accessing Speedtest.net.
+*isp_name - ISP name associated with IP Address.
+*is_isp - “1” is an ISP. "0" is another entity, like a government, university or corporate connection.
+*connection_type - User ISP/connection type (estimated). 0 = Unknown, 1 = Dialup, 2 = Cable/DSL, 3 = Corporate, 4 = Cellular
+*client_country - Country from where test is taken.
+*client_country_code - Country code of country where test is taken.
+*client_region_name - Region name where test is taken. Depending on the country, these are states, provinces, or territories, etc.
+*client_region_code - Region code of region name where test is taken.
+*client_city - City where test is taken.
+*client_latitude - Latitude of location where test is taken.
+*client_longitude - Longitude of location where test is taken.
+*miles_between - Distance (in miles) between location where the test is taken and location of server.
+*gmaps_formatted_address - Full location name including city, county, region, and country, if available.
+*gmaps_name - Unabbreviated location name; typically the city where the test is taken.
+*gmaps_type - Locality where test is taken. This is typically an incorporated city or town political entity.
+*gmaps_country - Country where test is taken.
+*gmaps_country_code - Country code where test is taken.
+*gmaps_region - Region name where test is taken. This is the first-order civil entity in a country level. Depending on the country, these are states, provinces, or territories, etc.
+*gmaps_subregion - Region name where test is taken. This is the second-order civil entity in a country level. Depending on the country, these are county-level names. Not all countries display this information.
+*gmaps_subsubregion - Region name where test is taken. This is the third-order civil entity in a country level. Depending on the country, these are the level under counties. Not all countries display this information.
+*gmaps_postal_code - Postal code for the test location. The postal code is that same as what is used to address mail within the country.
+*client_ipv6_address - Speedtest user's IPV6 address. We mask IP addresses for end users privacy, but show enough to allow clients to see which provider is offering the user's internet service. Please note that this address may not be the connection that the Speedtest was taken over (unless there is no IPV4 address populated).

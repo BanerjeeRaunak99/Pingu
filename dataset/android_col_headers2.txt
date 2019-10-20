@@ -1,0 +1,49 @@
+*test_id - A unique ID for every speedtest performed based on the platform.
+*android_device_id - Each individual device is assigned a unique ID, which is tied to all the tests taken on the device.
+*android_fingerprint - The device model and OS version of the user's device. Not standardized across all manufacturers. Rather than Android fingerprint, rely on the device and hardware fields for accurate information about the device hardware.
+*test_date - Date and time of the test in Pacific time zone (GMT -8).
+*client_ip_address - This is the IP address from which the request to Ookla's reporting API was generated. The last octet of the user's external IP address is masked for addresses that are not on your network. Full IP addresses are available for your customers. Devices behind networks with carrier grade NAT may appear to share the same IP address.
+*download_kbps - The result of the download portion of the test, measured in kilobits per second.
+*upload_kbps - The result of the upload portion of the test, measured in kilobits per second.
+*latency - The result of the latency portion of the test, measured in milliseconds.
+*server_name - The name of the server used for the test. This is typically the city where the server is located.
+*server_country - The country where the server used for the test is located.
+*server_country_code - The two letter country code (ISO 3166-1 alpha-2) of where the test server is located.
+*server_latitude - The latitude of the server used for the test.
+*server_longitude - The longitude of the server used for the test.
+*server_sponsor_name - The name of the test server sponsor. Combining server name and server sponsor will create a unique name for each server.
+*client_country - The country where the device is located.
+*client_country_code - The two letter country code (ISO 3166-1 alpha-2) of where the device was located.
+*client_region_name - The region within a country where the test was conducted. How each country is divided into regions varies country to country, but this is typically the top level region as described in ISO-3166-2. If this field is labeled unknown and the field location type equals 2, we were unable to confidently assign a region to the record and the location is only accurate to the country level.
+*client_region_code - The ISO-3166-2 region code of where the test was conducted.
+*client_city - The city where the test was conducted. If this field is labeled unknown and the location type field equals 2, we were unable to confidently assign a city to the record and is only accurate to the region level.
+*client_latitude - The latitude of the device conducting the test. If location type equals 2, this value is approximate.
+*client_longitude - The longitude of the device conducting the test. If location type equals 2, this value is approximate.
+*miles_between - Distance (in miles) between user and location of server.
+*isp_name - The name of the device's ISP, derived from the IP address in the client_ip_address field.
+*is_isp - Indicates whether or not a user's connection is an ISP. 1 = true, 0 = false. 0 generally indicates government, university, or corporate connections.
+*network_operator_name - The name of the network operator, as displayed by the device. This field is generally accurate, but is not reliable. Custom versions of Android, including carrier specific versions, may modify this string, and carriers have used different spellings and brandings on their network names.
+*mcc - Mobile Country Code (MCC) is a three digit code specific to the country where the network operator is located. A list of code and countries can be found here.
+*mnc - Mobile Network Code. A three digit identifier specific to a network operator within a given country. When combined with the Mobile Country Code, each mobile network can be uniquely identified. A fairly comprehensive list of Mobile Network Codes can be found here, but each country regulates their MNCs individually, so codes may appear or change without any notice.
+*pre_connection_type - A number representing the device's connection type as detected before the test begins. Please see the connection type table for an explanation of each type. Connection type as detected before the test starts: 0 = Unknown,1 = Cell, 2 = Wi-Fi, 3 = GPRS, 4 = EDGE, 5 = UMTS, 6 = CDMA, 7 = EVDO0, 8 = EVDOA, 9 = OnexRTT, 10 = HSDPA, 11 = HSPA, 12 = IDEN, 13 = EHRPD, 14 = EVDOB, 15 = LTE, 16 = HSUPA, 17 = HSPAP, 18 = GSM, 19 = TDSCDMA, 20 = IWLAN, 21 = LTE-CA; "Standard" extracts recipients receive everything but wifi data (#2). "Advanced" extracts recipients receive all fields.
+* post_connection_type - A number representing the device's connection type as detected at the end of the test. Please see the connection type table for an explanation of each type. Connection type as detected at the end of the test:  0 = Unknown,1 = Cell, 2 = Wi-Fi, 3 = GPRS, 4 = EDGE, 5 = UMTS, 6 = CDMA, 7 = EVDO0, 8 = EVDOA, 9 = OnexRTT, 10 = HSDPA, 11 = HSPA, 12 = IDEN, 13 = EHRPD, 14 = EVDOB, 15 = LTE, 16 = HSUPA, 17 = HSPAP, 18 = GSM, 19 = TDSCDMA, 20 = IWLAN, 21 = LTE-CA; ”Standard" extracts recipients receive everything but wifi data (#2). "Advanced" extracts recipients receive all fields.
+*brand - The consumer facing brand of the device.
+*device - The codename assigned to the device by the manufacturer.
+*hardware - The device hardware name, as reported by the Android kernel.
+*build_id - The Android build ID reflects the version of Android installed on the device. The build ID typically follows a standard convention of AAA##A, but some device manufacturers chose to implement their own convention. More information about Android build IDs can be found at https://source.android.com/source/build-numbers.html.
+*manufacturer - The device manufacturer.
+*model - User device's model.
+*product - The internal product code of the device. This is typically the same as the device codename, but occasionally differs.
+*cdma_cell_id - User's CDMA cell ID; also the base_station_id.
+*gsm_cell_id - User's GSM cell ID; also the cid.
+*location_type - The method used to determine the device's location. Whenever possible, the speedtest.net mobile application uses the device's location services to determine an accurate latitude and longitude of the device. However, in an effort to maintain a quick and easy user experience, if the device's location services are either unavailable or unable to return an accurate location within a few seconds, we fall back to using third party Geo-IP location services. 1 = GPS / device location services, 2 = Geo-IP.
+*gmaps_formatted_address - Full location name including city, county, region, and country, if available.
+*gmaps_name - Unabbreviated location name; typically the city where the test is taken.
+*gmaps_type - Locality where test is taken. This is typically an incorporated city or town political entity.
+*gmaps_country - Country where test is taken.
+*gmaps_country_code - Country code where test is taken.
+*gmaps_region - Region name where test is taken. This is the first-order civil entity in a country level. Depending on the country, these are states, provinces, or territories, etc.
+*gmaps_subregion - Region name where test is taken. This is the second-order civil entity in a country level. Depending on the country, these are county-level names. Not all countries display this information.
+*gmaps_subsubregion - Region name where test is taken. This is the third-order civil entity in a country level. Depending on the country, these are the level under counties. Not all countries display this information.
+*gmaps_postal_code - Postal code for the test location. The postal code is that same as what is used to address mail within the country.
+*client_ipv6_address - Speedtest user's IPV6 address. We mask IP addresses for end users privacy, but show enough to allow clients to see which provider is offering the user's internet service. Please refer to "test_method_a" to see with IP address the test was taken over.

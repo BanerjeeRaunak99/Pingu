@@ -1,0 +1,45 @@
+Data Extracts Definitions
+Windows Phone Extracts*
+
+Standard Fields
+(no Advanced Fields for Windows Phone)
+
+*test_id - Unique ID of the test.
+*wp_device_id - Unique ID of the testing device.
+*test_date - Date and time of the test in Pacific time zone.
+*client_ip_address - Client IP address.
+*download_kbps - Download speed in kilobits per second (kbps).
+*upload_kbps - Upload speed in kilobits per second (kbps).
+*latency - Ping in milliseconds (ms).
+*server_name - Name and city of server tested to.
+*server_country - Country of server tested to.
+*server_country_code - Country code of server tested to.
+*server_latitude - Latitude of server tested to.
+*server_longitude - Longitude of server tested to.
+*server_sponsor_name - Name of the server tested to.
+*client_country - Client country.
+*client_country_code - Client country code.
+*client_region_name - Client region name. In the US, this would be a state name.
+*client_region_code - Client region code.
+*client_city - Client city.
+*client_latitude - Client latitude.
+*client_longitude - Client longitude.
+*miles_between - Distance (in miles) between client and server being tested to.
+*connection_type - Client connection type. 0 = Unknown, 1 = Cell, 2 = Wi-Fi, 3 = GPRS, 4 = 1XRTT, 5 = EVDO, 6 = EDGE, 7 = 3G, 8 = HSPA, 9 = EVDV, 10 = PassThru, 11 = LTE, 12 = EHRPD
+*isp_name - Client ISP.
+*is_isp - Is client's connection an ISP? 1 = true, 0 = false. 0 generally indicates government, university or corporate connections.
+*network_operator_name - Client carrier name.
+*manufacturer - Client device manufacturer.
+*device_name - Client device name.
+*hardware_version - Client device hardware version number.
+*firmware_version - Client device firmware version.
+*location_type - Client location type. 0 = Unknown, 1 = GPS, 2 = GeoIP.
+*gmaps_formatted_address - Full location name including city, county, region, and country, if available.
+*gmaps_name - Unabbreviated location name; typically the city where the test is taken.
+*gmaps_type - Locality where test is taken. This is typically an incorporated city or town political entity.
+*gmaps_country - Country where test is taken.
+*gmaps_country_code - Country code where test is taken.
+*gmaps_region - Region name where test is taken. This is the first-order civil entity in a country level. Depending on the country, these are states, provinces, or territories, etc.
+*gmaps_subregion - Region name where test is taken. This is the second-order civil entity in a country level. Depending on the country, these are county-level names. Not all countries display this information.
+*gmaps_subsubregion - Region name where test is taken. This is the third-order civil entity in a country level. Depending on the country, these are the level under counties. Not all countries display this information.
+*gmaps_postal_code - Postal code for the test location. The postal code is that same as what is used to address mail within the country.

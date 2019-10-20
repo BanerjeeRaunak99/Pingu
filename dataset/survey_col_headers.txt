@@ -1,0 +1,32 @@
+test_id - unique id of test in our systems
+test_date - YYYY-MM-DD HH:MM:SS in Pacific time (we can accommodate different timezones if needed)
+client_ip_id - unique ip id of client in our system
+download_kbps - download speed in kilobits per second
+upload_kbps - upload speed in kilobits per second
+latency_ms - ping in milliseconds
+server_name - name of server tested to (name of city it is located in)
+server_country - country name of server
+server_country_code - country code of server
+server_latitude - latitude of server tested to
+server_longitude - longitude of server tested to
+server_sponsor_name - name of server sponsor
+user_agent - http://en.wikipedia.org/wiki/User_agent                               
+isp_name - ISP of client
+client_net_speed - 0-Unknown, 1-Dialup, 2-Cable/DSL and 3-Corporate
+is_isp - 1 = is isp, 0 = is not
+client_country - country name of the client
+client_country_code - country code of the client
+client_region - region name of client (this will be state in the US)
+client_region_code - region code of client
+client_city - city of client
+client_latitude - latitude of client
+client_longitude - longitude of client
+miles_between - miles between the client and the server tested to
+postal_code - postal code
+currency_code - ISO 4217 currency code - http://en.wikipedia.org/wiki/ISO_4217
+phone_flag - 1 = phone included in monthly price, 0 = phone not included
+tv_flag - 1 = tv included in monthly price, 0 = tv not included
+promised_down - download speed promised by the ISP in kbps
+promised_up - upload speed promised by the ISP in kbps
+monthly_price - monthly price for serivce in local currency
+usd_exchange_rate - exchange rate in USD at the time the survey was taken

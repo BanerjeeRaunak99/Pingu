@@ -1,0 +1,51 @@
+Data Extracts Definitions
+Speedtest Native Extracts
+
+Standard Fields
+
+*test_id - Unique ID of the test.
+*guid - Public-facing unique ID of the result.
+*result_date - Date and time of the test was taken in local time zone. Please note that time zone is not currently stored; this would need to be determined by location information.
+*received_date - Date and time that Ookla received the test result from the device (in Pacific time zone).
+*desktop_device_id - Each individual device is assigned a unique ID, which is tied to all the tests taken on the device.
+*platform - Platform on which the test was taken; 4 = OSX; 5 = Windows
+*client_ip_address - The first two octets of the user's external IP address. This is the IP address from which the request to Ookla's reporting API was generated. Devices behind networks with carrier grade NAT may appear to share the same IP address.
+*download_kbps - The result of the download portion of the test, measured in kilobits per second.
+*upload_kbps - The result of the upload portion of the test, measured in kilobits per second.
+*latency - The result of the latency portion of the test, measured in milliseconds.
+*server_name - City where server tested is located.
+*server_country - Country where server tested is located.
+*server_country_code - Country code of country where server is tested.
+*server_latitude - Latitude of server tested.
+*server_longitude - Longitude of server tested.
+*server_sponsor_name - Name of the server tested.
+*isp_name - ISP name associated with IP Address.
+*is_isp - "1" is an ISP. "0" is another entity, like a government, university or corporate connection.
+*connection_type - Connection type associated with the test. Most common responses will be 0, 2, and 22. 0 = Unknown; 1 = Cell; 2 = Wifi; 3 = Gprs; 4 = Edge; 5 = Umts; 6 = Cdma; 7 = Evdo0; 8 = EvdoA; 9 = OnexRTT; 10 = Hsdpa; 11 = Hspa; 12 = Iden; 13 = Ehrpd; 14 = EvdoB; 15 = Lte; 16 = Hsupa; 17 = Hspap; 18 = Gsm; 19 = TdScdma; 20 = IWLan; 21 = LteCa; 22 = Ethernet; 23 = Bluetooth
+*location_type - The source of information determining location of test. 1 = GPS (direct lat/long), 2 = Maxmind (GeoIP)
+*client_country - Country from where test is taken.
+*client_country_code - Country code of country where test is taken.
+*client_region_name - Region name where test is taken. Depending on the country, these are states, provinces, or territories, etc.
+*client_region_code - Region code of region name where test is taken.
+*client_city - City where test is taken.
+*client_latitude - Latitude of client testing. If GPS isn't used, then this is determined by Maxmind's GeoIP.
+*client_longitude - Longitude of client testing. If GPS isn't used, then this is determined by Maxmind's GeoIP.
+*gmaps_formatted_address - Full location name including city, county, region, and country, if available.
+*gmaps_name - Unabbreviated location name; typically the city where the test is taken.
+*gmaps_type - Locality where test is taken. This is typically an incorporated city or town political entity.
+*gmaps_country - Country where test is taken.
+*gmaps_country_code - Country code where test is taken.
+*gmaps_region - Region name where test is taken. This is the first-order civil entity in a country level. Depending on the country, these are states, provinces, or territories, etc.
+*gmaps_subregion - Region name where test is taken. This is the second-order civil entity in a country level. Depending on the country, these are county-level names. Not all countries display this information.
+*gmaps_subsubregion - Region name where test is taken. This is the third-order civil entity in a country level. Depending on the country, these are the level under counties. Not all countries display this information.
+*postal_code - Postal code for the test location. The postal code is the same as what is used to address mail within the country.
+
+
+Advanced Fields (all Advanced Fields end with an “_a”)
+
+*app_version_a - Software version of desktop application on the device when the test is taken.
+*location_accuracy_a - The accuracy of the location data collected from the device expressed in meters.
+*test_method_a - Type of speed test taken; either HTTP, TCP or WS (websocket).
+*jitter_a - The variance in latency over time which determines the stability of the internet connection.
+*ploss_sent_a - The number of packages sent to host server from device. To determine packet loss percentage, take the ploss_recv divided by ploss_sent. 100% means zero packet loss since 100% of the packets were sent and received.
+*ploss_recd_a - The number of packages received from host server by device. To determine packet loss percentage, take the ploss_recv divided by ploss_sent. 100% means zero packet loss since 100% of the packets were sent and received.

@@ -1,0 +1,38 @@
+Data Extracts Definitions
+Speedtest.net Survey Extracts
+
+Standard Fields
+(no Advanced Fields for the Speedtest.net Survey)
+
+*test_id - Unique ID of the test.
+*test_date - Date and time of the test in Pacific time zone.
+*client_ip_id - A unique ID representing the client IP address.
+*download_kbps - Download speed in kilobits per second (kbps).
+*upload_kbps - Upload speed in kilobits per second (kbps).
+*latency - Ping in milliseconds (ms).
+*server_name - Name and city of server tested to.
+*server_country - Country of server tested to.
+*server_country_code - Country code of server tested to.
+*server_latitude - Latitude of server tested to.
+*server_longitude - Longitude of server tested to.
+*server_sponsor_name - Name of the server tested to.
+*user_agent - Client web browser 'User Agent'.
+*isp_name - Client ISP.
+*connection_type - Client ISP/connection type (estimated). 0 = Unknown, 1 = Dialup, 2 = Cable/DSL and 3 = Corporate
+*is_isp - Is client's connection an ISP? 1 = true, 0 = false. 0 generally indicates government, university or corporate connections.
+*client_country - Client country.
+*client_country_code - Client country code.
+*client_region_name - Client region name. In the US, this would be a state name.
+*client_region_code - Client region code.
+*client_city - Client city.
+*client_latitude - Client latitude.
+*client_longitude - Client longitude.
+*miles_between - Distance (in miles) between client and server being tested to.
+*postal_code - Client postal code.
+*currency_code - Client ISO 4217 currency code.
+*phone_flag - Survey 'Is phone included in monthly price?'. 1 = Yes, 2 = No.
+*tv_flag - Survey 'Is TV included in monthly price?'. 1 = Yes, 2 = No.
+*promised_down - Survey 'Download speed promised by ISP in kbps'.
+*promised_up - Survey 'Upload speed promised by ISP in kbps'.
+*monthly_price - Survey 'Monthly price for service' in local currency.
+*usd_exchange_rate - Exchange rate in USD at the time the survey was taken.
