@@ -1,3 +1,4 @@
+import pickle
 import numpy as np
 # from sklearn.cluster import MeanShift, KMeans
 # from sklearn.ensemble import RandomForestClassifier
@@ -46,6 +47,7 @@ y = np.array(df['Call Drop Category'])
 clf = tree.DecisionTreeClassifier()
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 clf.fit(X_train, y_train)
+pickle.dump(clf, open('model.pickle', 'wb'))
 accuracy = clf.score(X_test, y_test)
 print(accuracy)
 example_measures = np.array([3,1,1,29.994077,76.9527568])
