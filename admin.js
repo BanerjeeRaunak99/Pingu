@@ -30,7 +30,7 @@ let query = citiesRef.where('flag', '==', "v").get()
     snapshot.forEach(doc => {
       var data = JSON.stringify(doc.data(), null, 2);
       console.log(data)
-      fs.appendFileSync('data.json', data);
+      fs.appendFileSync('data.json',JSON.stringify(doc.id)+':'+ data);
       fs.appendFileSync('data.json', ',');
 
       //console.log(doc.data());
