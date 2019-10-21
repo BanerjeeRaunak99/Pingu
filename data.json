@@ -1,25 +1,7 @@
-{"ramiz12":{
-  "lat": 12.7842,
-  "speed": "",
-  "lon": 79.8874,
-  "carrier": "VODAFONE",
-  "flag": 0
-},"raunak123":{
-  "flag": 0,
-  "lat": 12.78452,
-  "speed": "",
-  "lon": 79.8874,
-  "carrier": "VODAFONE"
-},"shreshth28":{
-  "lat": 12.78452,
-  "speed": "",
-  "lon": 79.0045,
-  "carrier": "VODAFONE",
-  "flag": 0
-},"susmoy1997":{
-  "lon": 79.1559,
-  "carrier": "VODAFONE",
-  "flag": 0,
-  "lat": 12.9692,
-  "speed": ""
+{"susmoy1997":{
+  "flag": 1,
+  "lat": 12.9705854,
+  "speed": "31.43kb/second",
+  "lon": 79.1599909,
+  "carrier": "JIO"
 },}
