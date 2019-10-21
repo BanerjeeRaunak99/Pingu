@@ -10,15 +10,7 @@ admin.initializeApp({
 
 
 let db = admin.firestore();
-// db.collection('locations').get()
-//   .then((snapshot) => {
-//     snapshot.forEach((doc) => {
-//       console.log(doc.id, '=>', doc.data());
-//     });
-//   })
-//   .catch((err) => {
-//     console.log('Error getting documents', err);
-//   });
+
 let citiesRef = db.collection('locations');
 let query = citiesRef.where('flag', '==', "v").get()
   .then(snapshot => {
@@ -29,13 +21,14 @@ let query = citiesRef.where('flag', '==', "v").get()
     fs.writeFileSync('data.json','{')
     snapshot.forEach(doc => {
       var data = JSON.stringify(doc.data(), null, 2);
-      console.log(data)
+      //console.log(data)
       fs.appendFileSync('data.json',JSON.stringify(doc.id)+':'+ data);
       fs.appendFileSync('data.json', ',');
 
       //console.log(doc.data());
     });
     fs.appendFileSync('data.json','}')
+
   })
   .catch(err => {
     console.log('Error getting documents', err);

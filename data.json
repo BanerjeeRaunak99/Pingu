@@ -1,20 +1,21 @@
 {"mapped7":{
-  "network speed": 0,
-  "weather": "sunny",
   "network strength": 0,
   "flag": "v",
   "isp": "none",
   "loc": {
     "_latitude": 12.968739,
     "_longitude": 79.156135
-  }
+  },
+  "network speed": 0,
+  "weather": "sunny"
 },"mapped8":{
   "weather": "rain",
-  "isp": "airtel",
+  "network strength": 85,
   "flag": "v",
+  "isp": "airtel",
   "loc": {
     "_latitude": 12.968739,
     "_longitude": 79.156135
   },
-  "network strength": 85
+  "network speed": 3.8
 }}
