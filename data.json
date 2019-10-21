@@ -1,21 +1,25 @@
-{"mapped7":{
-  "network strength": 0,
-  "flag": "v",
-  "isp": "none",
-  "loc": {
-    "_latitude": 12.968739,
-    "_longitude": 79.156135
-  },
-  "network speed": 0,
-  "weather": "sunny"
-},"mapped8":{
-  "weather": "rain",
-  "network strength": 85,
-  "flag": "v",
-  "isp": "airtel",
-  "loc": {
-    "_latitude": 12.968739,
-    "_longitude": 79.156135
-  },
-  "network speed": 3.8
-}}
+{"ramiz12":{
+  "lat": 12.7842,
+  "speed": "",
+  "lon": 79.8874,
+  "carrier": "VODAFONE",
+  "flag": 0
+},"raunak123":{
+  "flag": 0,
+  "lat": 12.78452,
+  "speed": "",
+  "lon": 79.8874,
+  "carrier": "VODAFONE"
+},"shreshth28":{
+  "lat": 12.78452,
+  "speed": "",
+  "lon": 79.0045,
+  "carrier": "VODAFONE",
+  "flag": 0
+},"susmoy1997":{
+  "lon": 79.1559,
+  "carrier": "VODAFONE",
+  "flag": 0,
+  "lat": 12.9692,
+  "speed": ""
+},}

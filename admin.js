@@ -2,17 +2,18 @@
 const admin = require('firebase-admin');
 const fs = require('fs');
 const functions = require('firebase-functions');
-var serviceAccount = require('./pingu-c43b5-firebase-adminsdk-51hbn-8382c08afc.json');
+var serviceAccount = require('./pingu-86df8-firebase-adminsdk-h9v0s-08ef71bae2.json');
 admin.initializeApp({
     credential: admin.credential.cert(serviceAccount),
-    databaseURL: "https://pingu-c43b5.firebaseio.com"
+    databaseURL: "https://pingu-86df8.firebaseio.com"
   });
 
 
 let db = admin.firestore();
 
-let citiesRef = db.collection('locations');
-let query = citiesRef.where('flag', '==', "v").get()
+let citiesRef = db.collection('connections');
+console.log(citiesRef)
+let query = citiesRef.where('flag', '==', 0).get()
   .then(snapshot => {
     if (snapshot.empty) {
       console.log('No matching documents.');
