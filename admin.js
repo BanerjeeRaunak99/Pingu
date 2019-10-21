@@ -13,7 +13,7 @@ let db = admin.firestore();
 
 let citiesRef = db.collection('connections');
 console.log(citiesRef)
-let query = citiesRef.where('flag', '==', 0).get()
+let query = citiesRef.where('flag', '==', 1).get()
   .then(snapshot => {
     if (snapshot.empty) {
       console.log('No matching documents.');
