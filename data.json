@@ -1,0 +1,21 @@
+{{
+  "network strength": 0,
+  "flag": "v",
+  "isp": "none",
+  "loc": {
+    "_latitude": 12.969858,
+    "_longitude": 79.159434
+  },
+  "network speed": 0,
+  "weather": "sunny"
+},{
+  "weather": "rain",
+  "network strength": 85,
+  "flag": "v",
+  "isp": "airtel",
+  "loc": {
+    "_latitude": 12.968739,
+    "_longitude": 79.156135
+  },
+  "network speed": 3.4
+},}
